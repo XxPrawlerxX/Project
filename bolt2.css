@@ -24,11 +24,13 @@ html {
     height: 680px;
 }
   .page_top{
-    display: -moz-inline-grid;
+    display: grid;
     padding-top: 16px;
     padding-bottom: 16px;
     justify-content: space-between;
     align-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 
   }
   .page_top1{
@@ -42,10 +44,12 @@ html {
   .sign_up{
     box-sizing: border-box;
     display: block;
-    line-height: inherit;
-    font-size: 16px;
+    line-height: 34px;
+    font-size: 14px;
     display: inline-block;
-    border-radius: 16px 16px;
+    border-radius: 20px 20px;
+    width: 80;
+    border: none;   
   }
   .language{
     display:inline-block;
