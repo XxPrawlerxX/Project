@@ -1,0 +1,129 @@
+:root{
+  font-family: euclidCircularB, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  #head_section{
+    background-image: url(images/hero\ \(4\).webp);
+    box-sizing: border-box;
+    display: flexbox;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 680px;
+}
+  .page_top{
+    display: -moz-inline-grid;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: space-between;
+    align-content: center;
+
+  }
+  .page_top1{
+    margin-left: 4rem;
+    display: block;
+  }
+  .page_top2{
+    display: block;
+    justify-self: space-between;
+  }
+  .sign_up{
+    box-sizing: border-box;
+    display: block;
+    line-height: inherit;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 16px 16px;
+  }
+  .language{
+    display:inline-block;
+  }
+  .tag1{
+    display: inline-block;
+    align-items: end;
+  }
+  .w-12{
+    width: 48px;
+    height: 27.813px;
+  }
+  .niglogo{
+    width: 16px;
+    height: 16px;
+  }
+  .frame{
+    padding-left: 4rem;
+    padding-right: 4rem;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .frame1{
+    align-content: center;
+    height: 360px;
+    display: flex;
+    width: 540px;
+    flex-direction: column;
+    align-items: start;
+  }
+
+
+
+
+h1{
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: -.01em;
+    border: 0 solid;
+    display: block;
+    font-size: 4rem;
+    letter-spacing: -.01em;
+    line-height: 4.5rem;
+    color: white;
+    width: 540px;
+    height: 144px;;
+    max-width: 540px;
+}
+ #text2{
+    margin-top: 24px;
+    width: 540px;
+    line-height: 1.75rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: white;
+    max-height: 112px;
+ }
+.button_div{
+    max-width: 540px;
+    height: 48px;
+    width:auto;
+}
+.get_app_button{
+    box-sizing: border-box;
+    display: block;
+    line-height: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 24px 24px 24px 24px;
+    background-color: #04AA6D;
+    border: none;
+    text-align: center;
+    height: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: white;
+    width: 138.453px;
+    margin-top: 24px;
+}
