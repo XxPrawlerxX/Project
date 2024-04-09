@@ -36,7 +36,7 @@ html {
   }
   .page_top1{
     margin-left: 4rem;
-    display: block;
+    display: flexbox;
   }
   .page_top2{
     display: grid;
@@ -56,7 +56,7 @@ html {
     background-color: #2f313f;
   }
   .language{
-    display:inline-block;
+    display:flex;
   }
   .tag1{
     display: inline-block;
@@ -74,13 +74,14 @@ html {
     padding-left: 4rem;
     padding-right: 4rem;
     height: 600px;
-    justify-content: space-around;
     align-items: center;
+    display: flex;
+    justify-content: flex-start;
   }
   .frame1{
     align-content: center;
     height: 360px;
-    display: flex;
+    display: block;
     width: 540px;
     flex-direction: column;
     align-items: start;
