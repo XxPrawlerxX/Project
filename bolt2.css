@@ -142,18 +142,36 @@ h1{
 
 /*start of second section of the page*/
 
+.main_frame{
+  box-sizing: border-box;
+  border: 0 solid;
+  display: block;
+  line-height: 3.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  align-content: center;
+}
+
 .earn{
   font-size: 3rem;
   letter-spacing: -.01em;
-  line-height: 3.5rem;
   text-align: center;
   margin-left: 0;
   margin-right: 0;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 1.5rem;
-  box-sizing: border-box;
-  border: 0 solid;
-  display: block;
+}
+.button_row{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+}
+
+#D{
+  align-self: center;
+  margin-left:  ;
+  justify-self: center;
 
 }
