@@ -165,10 +165,21 @@ h1{
 .button_row{
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  text-align: center;
 }
 
-.item{
-  
+.user{
+  font-size: .875rem;
+  line-height: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 0 solid;
+  /* width: 39.375px;*/
+  height: 32px;
 }
+
