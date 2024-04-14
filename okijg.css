@@ -27,3 +27,20 @@ body {
     margin: 0;
 }
 
+.topnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+
+  &__links{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  &__item{
+    list-style-type: none;
+  }
+}
