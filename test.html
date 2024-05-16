@@ -1,31 +1,88 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" src="bolt2.css">
-  <link rel="stylesheet" href="okijg.css">
-</head>
-<body>
-  <!--test for the hamburger menu before transfer-->
-  <header class="navwrap">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats in Space</title>
+    <link rel="stylesheet" href="okijg.css" />
+    <script src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"></script>
+    <script src="script.js" async></script>
+  </head>
+  <body>
+    <header class="topnav wrapper">
+      <h1><a href="/">Cats in Space</a></h1>
       <nav>
-        <ul class="topnav__links">
-          <li class="topnav__item"><a href="" class="topnav__link">item1</a></li>
-          <li class="topnav__item"><a href="" class="topnav__link">item2</a></li>
-          <li class="topnav__item"><a href="" class="topnav__link">item3</a></li>
-        </ul>
-      </nav>
-  </header>
-  <div class="page_top">
-    <div class="page_top1" id="bolt_logo"><img class="w-12" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjkiIGhlaWdodD0iNDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01NS4yNjIgMHYzMC4wNzRoLTcuMTM2VjEuNTA0TDU1LjI2MiAwek0zNC45NDUgMzIuOTI0YzEuOTcgMCAzLjU2OCAxLjU4NCAzLjU2OCAzLjUzOCAwIDEuOTU0LTEuNTk4IDMuNTM4LTMuNTY4IDMuNTM4cy0zLjU2OC0xLjU4NC0zLjU2OC0zLjUzOGMwLTEuOTU0IDEuNTk3LTMuNTM4IDMuNTY4LTMuNTM4em0wLTI0LjM4M2M2LjA3NSAwIDExLjAxIDQuODg0IDExLjAxIDEwLjkxOCAwIDYuMDM1LTQuOTM1IDEwLjkyLTExLjAxIDEwLjkyLTYuMDg1IDAtMTEuMDEtNC44ODUtMTEuMDEtMTAuOTIgMC02LjAzNCA0LjkzNS0xMC45MTggMTEuMDEtMTAuOTE4em0wIDE0LjQ1NmMxLjk3MiAwIDMuNTY4LTEuNTgyIDMuNTY4LTMuNTM4IDAtMS45NTUtMS41OTYtMy41MzgtMy41NjgtMy41MzhzLTMuNTY4IDEuNTgzLTMuNTY4IDMuNTM4YzAgMS45NTYgMS41OTYgMy41MzggMy41NjggMy41Mzh6bS0yMi40NDggMGMxLjIzIDAgMi4yMy0uOTkyIDIuMjMtMi4yMWEyLjIyNCAyLjIyNCAwIDAwLTIuMjMtMi4yMTJINy4xNDZ2NC40MjJoNS4zNTF6TTcuMTQ2IDcuMDc3djQuNDIyaDMuOTY0YzEuMjI5IDAgMi4yMy0uOTkzIDIuMjMtMi4yMTJhMi4yMjQgMi4yMjQgMCAwMC0yLjIzLTIuMjFINy4xNDZ6bTExLjkyMiA3LjA5NWMxLjcyNCAxLjY5IDIuNzk1IDQuMDMgMi43ODUgNi42MTQgMCA1LjEzLTQuMTkyIDkuMjg4LTkuMzY2IDkuMjg4SDBWMGgxMS4xYzUuMTczIDAgOS4zNjUgNC4xNTcgOS4zNjUgOS4yODcgMCAxLjc5LS41MDUgMy40Ny0xLjM5NyA0Ljg4NXpNNjguNzQgMTYuMDJoLTMuNTU4djUuNTUzYzAgMS42OC41NDUgMi45MTggMS45NzIgMi45MTguOTIyIDAgMS41OTYtLjIwNiAxLjU5Ni0uMjA2djUuMjA5cy0xLjQ3Ny44ODQtMy40NzkuODg0aC0uMDg5Yy0uMDkgMC0uMTY4LS4wMS0uMjU4LS4wMWgtLjA2OWMtLjA0IDAtLjA5LS4wMS0uMTI5LS4wMS0zLjk4NC0uMjA2LTYuNjktMi42OTItNi42OS03LjAwN1Y1LjA0MWw3LjEzNi0xLjUwM3Y1LjQwNWgzLjU2OHY3LjA3N3oiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" alt="Bolt logo"></div>
-    <div class="page_top2">
-        <div class="first_drop">
-            <label ><span ><img src="https://hatscripts.github.io/circle-flags/flags/ng.svg" class="niglogo"> NG</span></label>
+        <span id="nav-label" hidden>Navigation</span>
+        <button
+          id="btnOpen"
+          class="topnav__open"
+          aria-expanded="false"
+          aria-labelledby="nav-label"
+        >
+          <img src="/img/hamburger.svg" alt="" width="40" height="24" />
+        </button>
+        <div class="topnav__menu" role="dialog" aria-labelledby="nav-label">
+          <button class="topnav__close" id="btnClose" aria-label="Close">
+            <img src="/img/close.svg" alt="" width="28" height="27" />
+          </button>
+          <ul class="topnav__links">
+            <li class="topnav__item">
+              <a href="" class="topnav__link">Nyancat</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">Catra</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">Garfield</a>
+            </li>
+          </ul>
         </div>
-        <div class="tag1" id="support_link"><a href= https://google.com>Support</a></div>
-        <button type="button" id="">Sign up</button>
-    </div>
-  </div>
-    
-</body>
+      </nav>
+    </header>
+    <main>
+      <section class="wrapper cat" id="nyancat">
+        <img src="/img/nyancat@2x.png" alt="" width="250" />
+        <h2>Nyancat</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat
+          maxime dignissimos. Ducimus sit sequi nam, aut minus sunt suscipit
+          beatae quis maiores unde, asperiores voluptatum quasi delectus
+          reprehenderit non. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Ullam quod dolorem blanditiis nesciunt, debitis minima
+          doloremque quam hic. Harum, provident. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Accusantium, dolor quidem excepturi
+          dolores labore fugiat voluptatum porro fugit corrupti explicabo.
+        </p>
+      </section>
+      <section class="wrapper cat" id="catra">
+        <img src="/img/catra-space@2x.png" alt="Catra" width="100" />
+        <h2>Catra</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, nemo
+          quos architecto quaerat enim dicta? Voluptas est dicta enim modi
+          laboriosam, iste tempore corrupti? Ipsam sunt similique, expedita
+          mollitia facere accusamus non aut impedit porro quidem fuga a
+          doloribus, soluta reprehenderit consectetur tenetur aliquid
+          perspiciatis architecto odio. Consectetur, animi soluta? Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Ipsam, iste rem? Magnam
+          mollitia distinctio quis, maxime natus sint amet deleniti.
+        </p>
+      </section>
+      <section class="wrapper cat" id="garfield">
+        <img src="/img/garfield-in-space@2x.png" alt="Garfield" width="250" />
+        <h2>Garfield</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iure
+          ex, ea neque, hic assumenda consequuntur odio maxime adipisci dicta
+          voluptatibus ratione exercitationem officiis. Voluptatum voluptas
+          aliquam harum a, placeat porro dolorem iure tempore quia culpa
+          doloribus corporis! Amet possimus consequatur voluptates modi eum
+          nihil optio laudantium a, molestiae, delectus nisi esse, commodi harum
+          dicta ratione assumenda? Hic totam laboriosam iure, quo error
+          assumenda omnis veniam itaque unde accusamus, expedita beatae incidunt
+          nemo suscipit dolores nam aliquid fugit at esse!
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
